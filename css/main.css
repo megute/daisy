@@ -82,6 +82,7 @@ h3 {
 }
 a {
     color: #fff;
+    cursor: pointer;
 }
 .header {
     position: relative;
@@ -328,3 +329,48 @@ a {
     bottom: 15px;
 }
 /* ----------------- */
+
+.expand {
+    position: relative;
+    margin: 0 auto;
+    padding: 90px 0 100px;
+    text-align: center;
+    background: url(../img/bg2.jpg) no-repeat;
+    background-size: cover;
+}
+
+.expand__title {
+    padding: 130px 0;
+    border: 8px solid rgba(255, 255, 255, 0.1);
+}
+
+.expand__title h2 {
+    font-family: PFEncoreSansPro-Bold;
+    font-size: 51px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.expand__title h2 span{
+    color: #fc635e;
+}
+
+.expand__title a {
+    font-size: 24px;
+    color: #fc635e;
+    border: 3px solid #fc635e;
+    border-radius: 6px;
+    padding: 15px 62px;
+    transition-duration: 0.3s;
+    letter-spacing: 0.5px;
+}
+.expand__title a:hover {
+    color: #fff;
+    background: #fc635e;
+    border-color: #fe8682;
+}
+
+.expand__slider {
+    position: absolute;
+    left: calc( 50% - 14px );
+    bottom: 20px;
+}
