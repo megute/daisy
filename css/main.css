@@ -49,20 +49,35 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     font-family: PFEncoreSansPro-Thin;
     src: url(../fonts/PFEncoreSansPro-Thin.ttf);
 }
+@font-face {
+    font-family: PFEncoreSansPro-Light;
+    src: url(../fonts/PFEncoreSansPro-Thin.ttf);
+}
+
 .container {
     max-width: 940px;
     margin: 0 auto;
 }
+p, h3, a {
+    font-family: PFEncoreSansPro-Light;
+}
+a {
+    color: #fff;
+}
 .header {
+    position: relative;
     height: 100vh;
-    padding-top: 25px;
+    padding: 25px 0;
     background: url(../img/bg1.jpg) no-repeat;
     background-size: cover;
 }
- .head__row {
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
+.head {
+    margin-bottom: 186px;
+}
+.head__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
  }
  .head__logo {
      height: 60px;
@@ -107,20 +122,19 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     bottom: -3px;
 }
 
-/* ;;;;;;;;;;;;;;;;;; */
+/* ----------------- */
 
 .menu__list li {
     display: inline;
     margin-left: 45px;
     text-transform: uppercase;
     font-size: 16px;
-    font-family: PFEncoreSansPro-Thin;
 }
 
 .menu__list li a {
-    color: #fff;
     letter-spacing: 0.5px;
     transition-duration: 0.3s;
+    font-family: PFEncoreSansPro-Thin;
 } 
 
 .menu__list li a:hover {
@@ -128,3 +142,91 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     color: #fc635e;
     padding-bottom: 5px;
 }
+
+/* ----------------- */
+
+.header__title {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.title__heading {
+    color: #fff;
+}
+
+.title__heading h1 {
+    position: relative;
+    font-family: PFEncoreSansPro-Bold;
+    text-transform: uppercase;
+    font-size: 51px;
+    margin-bottom: 20px;
+}
+.title__heading h1::before , .title__heading h1::after {
+    content: '';
+    display: block;
+    width: 100%;
+    max-width: 107px;
+    height: 8px;
+    background: #7d7d79;
+    opacity: 70%;
+    position: absolute;
+    top: calc(50% - 4px);
+}
+section {
+    background: #000;
+    padding: 100px;
+}
+.title__heading h1::after {
+    content: '';
+    right: 0;
+}
+.title__heading span {
+    color: #fc635e;
+}
+
+.title__heading p {
+    font-size: 24px;
+    margin-bottom: 60px;
+}
+.title__but {
+    position: relative;
+    max-width: 450px;
+    margin: 0 auto;
+}
+.title__but a {
+    color: #fc635e;
+    font-size: 24px;
+    padding: 15px 33px;
+    border: 2px solid #fc635e;
+    border-radius: 7px;
+    position: relative;
+}
+.title__but a::before {
+    content: url(../img/mouse.png);
+    position: absolute;
+    top: calc(50% - 16px);
+    right: -60px;
+} 
+ .title__but a::after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 0.5px);
+    right: -135px;
+    width: 100%;
+    max-width: 70px;
+    height: 70vh;
+    border-top: 1px dashed #7d7d7d;
+    border-right: 1px dashed #7d7d7d;
+    border-width: 2px;
+    border-radius: 0 28px;
+} 
+/* ----------------- */
+
+.header__cursor {
+    position: absolute;
+    bottom: 25px;
+    left: calc(50% - 14px);
+}
+/* ----------------- */
+/* ----------------- */
