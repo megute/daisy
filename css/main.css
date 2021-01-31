@@ -76,6 +76,9 @@ h2 {
     font-family: PFEncoreSansPro-Medium;
     text-transform: uppercase;
 }
+h2 span {
+    color: #fc635e;
+}
 h3 {
     font-family: PFEncoreSansPro-Medium;
     color: #868686;
@@ -247,7 +250,7 @@ a {
 } 
 /* ----------------- */
 
-.slider .header__slider {
+.header .slider {
     bottom: 25px;
 }
 
@@ -277,9 +280,6 @@ a {
     left: calc( 50% - 168.5px);
 }
 
-.about__title h2 span {
-    color: #fc635e;
-}
 .about__title p {
     font-size: 20px;
     margin-top: 28px;
@@ -352,9 +352,6 @@ a {
     color: #fff;
     margin-bottom: 50px;
 }
-.expand__title h2 span{
-    color: #fc635e;
-}
 
 .expand__title a {
     font-size: 24px;
@@ -397,9 +394,7 @@ a {
     bottom: -11px;
     left: calc( 50% - 92px );
 }
-.process__title span {
-    color: #fc635e;
-}
+
 .process__title p {
     font-size: 20px;
     margin-top: 30px;
@@ -663,6 +658,92 @@ a {
 
 /* ----------------- */
 
+.lp, .adv, .mk {
+    position: relative;
+}
 
+.we-do__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.lp .we-do__row {
+    margin-top: 80px;
+}
+.we-do__title h2 {
+    position: relative;
+}
+.we-do__title h2::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 222px;
+    background: #adadad;
+    left: calc( 50% - 111px );
+    bottom: -10px;
 
+}
+
+.we-do__topic {
+    max-width: 377px;
+
+}
+.we-do__topic__right {
+    text-align: right;
+}
+
+.we-do h3 {
+    position: relative;
+    font-family: PFEncoreSansPro-Medium;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+    padding: 0 20px;
+}
+.we-do__topic__left h3::before {
+    content: '';
+    position: absolute;
+    height: 38px;
+    width: 10px;
+    background: #fc635e;
+    top: calc( 50% - 19px );
+    left: 0;
+}
+.we-do__topic__right h3::after {
+    content: '';
+    position: absolute;
+    height: 38px;
+    width: 10px;
+    background: #fc635e;
+    top: calc( 50% - 19px );
+    right: 0;
+}
+
+.we-do__topic p {
+    line-height: 24px;
+    margin-bottom: 50px;
+}
+
+.we-do__topic a {
+    padding: 10px 30px;
+    font-size: 20px;
+    background: #fc635e;
+    border-radius: 8px;
+}
+
+.lp {
+    padding: 60px 0 95px;
+    background: #f2f2f2;
+}
+.lp h2 {
+    text-align: center;
+    margin: 0 auto;
+}
+.adv {
+    padding: 134px 0 152px;   
+}
+.mk {
+    padding: 120px 0 130px;
+    background: #f2f2f2;
+}
 /* ----------------- */ 
