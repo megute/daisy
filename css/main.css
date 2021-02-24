@@ -71,10 +71,12 @@ p {
     color: #adadad;
 }
 h2 {
+    position: relative;
     color: #868686;
     font-size: 28px;
     font-family: PFEncoreSansPro-Medium;
     text-transform: uppercase;
+    text-align: center;
 }
 h2 span {
     color: #fc635e;
@@ -267,9 +269,7 @@ a {
     text-align: center;
     margin-bottom: 80px;
 }
-.about__title h2 {
-    position: relative;
-}
+
 .about__title h2::after {
     content: '';
     position: absolute;
@@ -382,9 +382,7 @@ a {
     max-width: 500px;
     margin-bottom: 60px;
 }
-.process__title h2 {
-    position: relative;
-}
+
 .process__title h2::after {
     content: '';
     position: absolute;
@@ -404,12 +402,10 @@ a {
 .process__steps {
     height: 550px;
     width: 100%;
-    margin: 0 auto;
 }
 
 .process__steps ul {
     position: relative;
-    left: calc( 50% - 470px);
 }
 
 .steps__items .step__item {
@@ -670,9 +666,6 @@ a {
 .lp .we-do__row {
     margin-top: 80px;
 }
-.we-do__title h2 {
-    position: relative;
-}
 .we-do__title h2::after {
     content: '';
     position: absolute;
@@ -735,10 +728,6 @@ a {
     padding: 60px 0 95px;
     background: #f2f2f2;
 }
-.lp h2 {
-    text-align: center;
-    margin: 0 auto;
-}
 .adv {
     padding: 134px 0 152px;   
 }
@@ -747,3 +736,249 @@ a {
     background: #f2f2f2;
 }
 /* ----------------- */ 
+
+.portfolio {
+    position: relative;
+    padding: 80px 0 15px;
+}
+
+.prtf__title {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.prtf__title h2::after {
+    content: '';
+    position: absolute;
+    width: 142px;
+    height: 1px;
+    background: #adadad;
+    bottom: -13px;
+    left: calc( 50% - 71px );
+}
+
+/* ----------------- */ 
+
+.prtf__controls {
+    padding: 20px 12px;
+    border-top: 1px solid #adadad;
+    border-bottom: 1px solid #adadad;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prtf__controls button {
+    position: relative;
+    background: none;
+    font-family: PFEncoreSansPro-Light;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fc635e;
+}
+.prtf__controls button::after {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 1px;
+    background: #adadad;
+    transform: rotate(30deg);
+    top: calc( 50% - 7.5px);
+    right: -61px;
+}
+.prtf__controls button:last-child::after {
+    content: '';
+    display: none;
+}
+
+.container-filter {
+    width: 100%;
+    margin: 30px 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-filter div {
+    width: 220px;
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+    margin: 10px;
+}
+.container-filter .ex1 {
+    background-image: url(../img/prtf1.jpg);
+}
+.container-filter .ex2 {
+    background-image: url(../img/prtf2.jpg);
+}
+.container-filter .ex3 {
+    background-image: url(../img/prtf3.jpg);
+}
+.container-filter .ex4 {
+    background-image: url(../img/prtf4.jpg);
+}
+.container-filter .ex5 {
+    background-image: url(../img/prtf5.jpg);
+}
+.container-filter .ex6 {
+    background-image: url(../img/prtf6.jpg);
+}
+
+.container-filter .fil {
+    display: none;
+    position: relative;
+    margin: 0;
+    background: url(../img/plus.png) rgba(255, 72, 72, 0.75);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container-filter div:hover .fil {
+    cursor: pointer;
+    display: block;
+}
+
+.container-filter .fil p { 
+    padding: 10px;
+    font-family: PFEncoreSansPro-Bold;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.prtf__button {
+    text-align: center;
+    margin: 60px 0 70px;
+}
+.prtf__button a {
+    background: #fc635e;
+    font-size: 20px;
+    padding: 15px 17px;
+    border-radius: 5px;
+}
+
+/* ----------------- */ 
+
+.team {
+    position: relative;
+    background: #f2f2f2;
+    padding: 53px 0 40px;
+}
+
+.team__title {
+    margin-bottom: 70px;
+}
+
+.team__title h2::after {
+    content: '';
+    position: absolute;
+    width: 142px;
+    height: 1px;
+    background: #adadad;
+    left: calc( 50% - 71px );
+    bottom: -12px;
+}
+
+.team__content {
+    margin-bottom: 70px;
+}
+
+.team__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.team__item {
+    text-align: center;
+    padding: 191px 0 0;
+}
+.team__item1 {
+    background: url(../img/team-img1.png) 50% 0 no-repeat;
+}
+.team__item2 {
+    margin-right: 51px;
+    background: url(../img/team-img2.png) 50% 0 no-repeat;
+}
+.team__item3 {
+    background: url(../img/team-img3.png) 50% 0 no-repeat;
+}
+
+.team__item h4 {
+    font-family: PFEncoreSansPro-Medium;
+    font-size: 28px;
+    color: #565656;
+}
+.team__item h4 span{
+    color: #fc635e;
+}
+.team__item p {
+    font-size: 20px;
+    margin: 11px 0;
+}
+
+.team__item__social a {
+    margin-right: 14px;
+}
+.team__item__social a:last-child {
+    margin-right: 0;
+}
+
+/* ----------------- */ 
+
+.testimonials {
+    padding: 53px 0 165px;
+}
+
+/* ----------------- */ 
+
+.footer {
+    padding: 78px 0 42px;
+    background: url(../img/footer-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+.footer__logo {
+    max-width: 200px;
+    margin: 0 auto;
+}
+.footer__logo a {
+    display: flex;
+    align-items: center;
+}
+
+.footer__hexagon {
+    position: relative;
+    height: 90px;
+    width: 0;
+    border-right: 39px solid #fc645f;
+    border-top: 23px solid transparent;
+    border-bottom: 23px solid transparent;
+}
+.footer__hexagon::before {
+    content: '';
+    position: absolute;
+    height: 90px;
+    width: 0;
+    border-left: 39px solid #fc645f;
+    border-top: 23px solid transparent;
+    border-bottom: 23px solid transparent;
+    left: 39px;
+    top: -23px;
+}
+.footer__hexagon p {
+    font-family: PFEncoreSansPro-Bold;
+    font-size: 51px;
+    text-transform: uppercase;
+    color: #323743;
+    position: absolute;
+    left: 25px;
+    bottom: -3px;
+}
+
+.footer__logo__daisy {
+    font-family: GothamPro-Bold;
+    font-size: 31px;
+    color: #fff;
+    margin-left: 55px;
+}
