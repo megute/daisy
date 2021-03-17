@@ -244,7 +244,7 @@ a {
     right: -135px;
     width: 100%;
     max-width: 70px;
-    height: 42vh;
+    height: 65vh;
     border-top: 1px dashed #7d7d7d;
     border-right: 1px dashed #7d7d7d;
     border-width: 2px;
@@ -1035,6 +1035,7 @@ a {
     margin-left: 55px;
 }
 
+
 /* ----------------- */ 
 
 @media (max-width: 991px) {
@@ -1084,8 +1085,8 @@ a {
     .we-do__illus {
         max-width: 300px;
     }
-    .lp .we-do__illus , .mk .we-do__illus {
-        margin-top: 20px;
+    .prtf__controls button::after {
+        right: -34px;
     }
     .testim__block {
         flex-direction: column;
@@ -1104,6 +1105,77 @@ a {
 
 }
 @media (max-width: 666px) {
+    body.lock {
+        overflow: hidden;
+    }
+    .slider {
+        display: none;
+    }
+    .head__logo {
+        z-index: 5;
+    }
+    .header__burger {
+        display: block;
+        position: relative;
+        z-index: 5;
+        width: 30px;
+        height: 20px;
+    }
+    .header__burger span {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+    .header__burger::before ,
+    .header__burger::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        transition: all 0.3s ease 0s;
+    }
+    .header__burger::after {
+        bottom: 0;
+    }
+    .header__burger.active span {
+        transform: scale(0);
+    }
+    .header__burger.active:before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header__burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .head__menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        overflow: auto;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        z-index: 3;
+        transition: all 0.3s ease 0s;
+    }
+    .head__menu.active {
+        top: 0;
+    }
+    .menu__list {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 30%;
+    }
+    .menu__list li{
+        margin: 0 0 30px 0;
+        font-size: 25px;
+    }
     .process__steps {
         height: 640px;
         position: relative;
@@ -1177,6 +1249,30 @@ a {
         top: 83px;
         left: 149px;
     }
+    .lp, .adv, .mk {
+        padding: 60px 0;
+    }
+    .we-do__row {
+        flex-direction: column;
+    }
+    .we-do__topic {
+        order: 2;
+    }
+    .we-do__illus {
+        order: 1;
+        margin: 0 0 30px 0;
+    }
+
+    .prtf__controls {
+        display: block;
+    }
+    .prtf__controls button {
+        margin: 0px 30px 5px 0px;
+    }
+    .prtf__controls button::after {
+        right: -17px;
+    }
+
     .team__row {
         flex-direction: column;
     }
@@ -1185,5 +1281,30 @@ a {
     }
     .team__item:last-child {
         margin: 0;
+    }
+}
+@media (max-width: 500px) {
+    .title__but a::before ,
+    .title__but a::after {
+        display: none;
+    }
+    .about__title h2::after {
+        width: 268px;
+        left: calc(50% - 134px);
+    }
+    .process__steps__cont {
+        left: 0;
+    }
+    .process__steps .item1 {
+        left: 20px;
+    }
+    .process__steps .item2 {
+        left: 106px;
+    }
+    .process__steps .item3 {
+        left: 20px;
+    }
+    .process__steps .item4 {
+        left: 106px;
     }
 }
