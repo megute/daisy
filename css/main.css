@@ -1308,3 +1308,8 @@ a {
         left: 106px;
     }
 }
+@media screen and (max-height: 560px) {
+    .header .head {
+        margin-bottom: 150px;
+    }
+}
