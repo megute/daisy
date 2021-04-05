@@ -96,7 +96,6 @@ a {
 }
 
 
-
 .header {
     position: relative;
     height: 100vh;
@@ -230,6 +229,12 @@ a {
     border: 2px solid #fc635e;
     border-radius: 7px;
     position: relative;
+    transition-duration: 0.3s;
+}
+.title__but a:hover {
+    color: #fff;
+    background: #fc635e;
+    border-color: #fe8682;
 }
 .title__but a::before {
     content: url(../img/mouse.png);
@@ -724,6 +729,12 @@ a {
     font-size: 20px;
     background: #fc635e;
     border-radius: 8px;
+    transition-duration: 0.3s;
+}
+.we-do__topic a:hover {
+    background: transparent;
+    border: 2px solid #fc635e;
+    color: #fc635e;
 }
 
 .lp {
@@ -776,6 +787,12 @@ a {
     font-size: 20px;
     text-transform: uppercase;
     color: #fc635e;
+    transition-duration: 0.3s;
+}
+.prtf__controls button:hover {
+    border-bottom: 2px solid #fc635e;
+    color: #fc635e;
+    padding-bottom: 5px;
 }
 .prtf__controls button::after {
     content: '';
@@ -787,6 +804,7 @@ a {
     top: calc( 50% - 7.5px);
     right: -61px;
 }
+
 .prtf__controls button:last-child::after {
     content: '';
     display: none;
@@ -857,8 +875,14 @@ a {
     font-size: 20px;
     padding: 15px 17px;
     border-radius: 5px;
+    transition-duration: 0.3s;
+    box-sizing: padding-box;
 }
-
+.prtf__button a:hover {
+    background: transparent;
+    border: 2px solid #fc635e;
+    color: #fc635e;
+}
 /* ----------------- */ 
 
 .team {
