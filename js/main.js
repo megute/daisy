@@ -6,3 +6,7 @@ $(document).ready(function() {
         $('body').toggleClass('lock');
     });
 });
+
+$(document).ready(function(){
+    $('.testim__slider').slick();
+});
